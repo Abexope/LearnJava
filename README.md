@@ -1,6 +1,4 @@
-<b><font size='8'>LearnJava</font></b>
-
----
+# LearnJava
 
 自学马士兵Java程序设计基础公开课
 
