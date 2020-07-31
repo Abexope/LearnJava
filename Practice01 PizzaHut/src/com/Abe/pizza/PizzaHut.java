@@ -43,8 +43,7 @@ final public class PizzaHut {
 
     public Pizza getPizza(Client client) {
         /* 披萨生产方法
-            int type: 披萨种类
-                常规取值`1`或`2`，否则返回一个默认的培根披萨
+            Client client: 客户端对象，包含用户输入的购买信息
         * */
         switch (client.getType()) {
             case 1: {
