@@ -1,7 +1,7 @@
 package com.Abe.client;
 
-import juice.Juice;
-import juice.JuiceClub;
+import com.Abe.juice.Juice;
+import com.Abe.juice.JuiceClub;
 
 import java.util.Scanner;
 
