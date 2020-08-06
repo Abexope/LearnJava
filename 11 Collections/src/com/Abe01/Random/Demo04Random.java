@@ -1,4 +1,4 @@
-package com.Abe.DemoRandom;
+package com.Abe01.Random;
 
 import java.util.Random;
 import java.util.Scanner;
