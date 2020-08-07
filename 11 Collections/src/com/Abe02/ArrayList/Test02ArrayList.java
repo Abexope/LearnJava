@@ -2,6 +2,10 @@ package com.Abe02.ArrayList;
 
 import java.util.ArrayList;
 
+/**
+ * ArrayList练习：自定义4个学生对象，添加到集合，并遍历
+ */
+
 
 public class Test02ArrayList {
     public static void main(String[] args) {

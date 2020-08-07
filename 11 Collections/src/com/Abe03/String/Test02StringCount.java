@@ -2,6 +2,10 @@ package com.Abe03.String;
 
 import java.util.Scanner;
 
+/**
+ * 字符串练习：键盘输入一个字符串，并且统计其中各种字符串的出现次数
+ *      种类包括：大写字母、小写字母、数字、其它
+ */
 
 public class Test02StringCount {
     public static void main(String[] args)

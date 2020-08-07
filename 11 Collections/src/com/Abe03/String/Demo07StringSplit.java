@@ -10,7 +10,7 @@ public class Demo07StringSplit {
         }
 
         String str2 = "aaa.bbb.ccc";
-        String[] array2 = str2.split("\\.");
+        String[] array2 = str2.split("\\.");    // 转义反斜和句点
 
         for (String s1 : array2) {
             System.out.println(s1);
