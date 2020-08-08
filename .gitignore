@@ -16,3 +16,5 @@
 out/production/06 Array/META-INF/
 
 out/production/09 OOP03/META-INF/
+
+*.kotlin_module

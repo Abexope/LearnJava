@@ -1,6 +1,8 @@
 package Polymorphism03;
 
 /**
+ * 多态之`父类引用指向继承类的对象`（二）
+ *
  * 如何才能知道一个父类引用的对象，本来是什么子类：instanceof
  *
  *  格式：[对象名] instanceof [类名]
