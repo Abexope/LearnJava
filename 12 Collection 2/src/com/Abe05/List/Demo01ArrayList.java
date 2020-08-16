@@ -1,7 +1,6 @@
 package com.Abe05.List;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -24,10 +23,10 @@ import java.util.List;
  *      ArrayList：基于顺序表实现，查询快，增删慢
  *      LinkedList：基于连接表实现，查询慢，增删快
  */
-public class Demo01List {
+public class Demo01ArrayList {
     public static void main(String[] args) {
         // 创建 List 对象
-        List<String> list = new LinkedList<>();      // 多态
+        List<String> list = new ArrayList<>();      // 多态
         list.add("a");
         list.add("B");
         list.add("c");
