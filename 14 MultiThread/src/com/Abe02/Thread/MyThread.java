@@ -21,14 +21,17 @@ public class MyThread extends Thread {
     // 2.在Thread类的子类中重写 run() 方法，设置线程任务（开启线程要做什么?）
     @Override
     public void run() {
-        /*for (int i = 0; i < 2000; i++) {
+        for (int i = 0; i < 20; i++) {
+            try {
+                Thread.sleep(1);      // 使用Thread.sleep增加线程阻塞几率
+            } catch (InterruptedException e) {
+                e.printStackTrace();        // sleep() 方法需要处理中断异常
+            }
+            // 打印当前线程名称的两种方式
+            // System.out.println(Thread.currentThread().getName());
+            // 通过Thread类的静态方法调用线程名
             System.out.println(this.getName() + ": " + i);
-        }*/
-//        System.out.println(this.getName());
-//        Thread t = Thread.currentThread();
-//        System.out.println(t);
-//        String name = t.getName();
-//        System.out.println(name);
-        System.out.println(Thread.currentThread().getName());
+            // 由于继承了Thread类，因此可以使用this直接调用getName()方法
+        }
     }
 }

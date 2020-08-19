@@ -34,10 +34,15 @@ public class Demo01Thread {
         // 5.调用Thread类对象的 start() 方法，开启新的线程执行 run() 方法
         t.start();
 
-        new Thread(new RunnableImpl2()).start();    // 传递不同的实现类，实现不同的任务
+        new Thread(new RunnableImpl()).start();    // 传递不同的实现类，实现不同的任务
 
         // 主线程
-        for (int i = 0; i < 2000; i++) {
+        for (int i = 0; i < 20; i++) {
+            try {
+                Thread.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             System.out.println(Thread.currentThread().getName() + ": " + i);
         }
 

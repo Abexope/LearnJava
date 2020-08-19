@@ -5,7 +5,6 @@ package com.Abe08.TestThread;
  */
 
 public class StuffedBunHouse implements Runnable {
-    // 匿名包子铺线程类
 
     private int i = 1;
     final private Object lock;
@@ -39,7 +38,7 @@ public class StuffedBunHouse implements Runnable {
 
                     switch (i % 2) {  // 交替生产两种包子
                         case 0: {
-                            StuffedBun stuffedBun = new StuffedBun("薄皮", "猪肉大葱");
+                            StuffedBun stuffedBun = new StuffedBun("冰皮", "猪肉大葱");
                             System.out.println(Thread.currentThread().getName() + " 生产一个" + stuffedBun);
                             i++;
                             break;

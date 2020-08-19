@@ -5,7 +5,12 @@ public class RunnableImpl implements Runnable{
     @Override
     public void run() {
         // 2.在实现类中重写Runnable接口的 run() 方法，设置线程任务
-        for (int i = 0; i < 2000; i++) {
+        for (int i = 0; i < 20; i++) {
+            try {
+                Thread.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             System.out.println(Thread.currentThread().getName() + ": " + i);
         }
     }

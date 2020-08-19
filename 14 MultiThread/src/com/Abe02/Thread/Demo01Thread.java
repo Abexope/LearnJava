@@ -18,7 +18,6 @@ package com.Abe02.Thread;
 public class Demo01Thread {
     public static void main(String[] args) {
 
-
         // 3.实例化Thread子类对象
         MyThread mt1 = new MyThread();
         // 4.调用Thread类中的 start() 方法，启动新线程，执行 run() 方法
@@ -29,7 +28,12 @@ public class Demo01Thread {
         mt2.start();
 
         // 主线程方法
-        for (int i = 0; i < 2000; i++) {
+        for (int i = 0; i < 20; i++) {
+            try {
+                Thread.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             System.out.println("main: " + i);
         }
     }
