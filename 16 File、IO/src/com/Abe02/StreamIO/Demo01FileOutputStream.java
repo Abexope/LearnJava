@@ -1,4 +1,4 @@
-package com.Abe02.IO;
+package com.Abe02.StreamIO;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.io.IOException;
  *  字节输出流
  *  java.io.OutputStream
  *      此抽象类表示输出字节流类的超类
- *  子类共性的成员方法
+ *  子类通用方法
  *      - public void close(): 关闭此输出流并释放与此流相关联的任何系统资源
  *      - public void flush(): 刷新输出流并强制任何缓冲的输出字节被写出
  *      - public void write(byte[] b): 将 b.length 字节从指定的字节数组写入此输出流
@@ -38,7 +38,7 @@ import java.io.IOException;
  *      3.释放资源（流对象会占用一定的内存，使用完毕后要把内存清空，提高程序效率）
  */
 
-public class Demo01OutputStream {
+public class Demo01FileOutputStream {
     public static void main(String[] args) throws IOException {     // 三行代码均会抛出异常，均属于IOException或者它的子类
         // 1.创建 FileOutputStream 对象，构造方法中传递写入数据的目的地
         FileOutputStream fos = new FileOutputStream("..\\a.txt");

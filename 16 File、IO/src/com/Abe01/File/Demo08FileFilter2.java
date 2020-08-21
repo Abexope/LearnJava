@@ -1,7 +1,6 @@
 package com.Abe01.File;
 
 import java.io.File;
-import java.io.FileFilter;
 import java.util.Objects;
 
 /**
@@ -35,7 +34,7 @@ public class Demo08FileFilter2 {
         // Lambda表达式
 //        File[] files = f.listFiles((File pathname) -> {return pathname.isDirectory() || pathname.getName().toLowerCase().endsWith(".java");});
 
-        // 简化的 Lambda 表达式
+        // 简化 Lambda 表达式
         File[] files = f.listFiles(pathname -> pathname.isDirectory() || pathname.getName().toLowerCase().endsWith(".java"));
 
         for (File file : Objects.requireNonNull(files)) {   // 传递过滤器对象

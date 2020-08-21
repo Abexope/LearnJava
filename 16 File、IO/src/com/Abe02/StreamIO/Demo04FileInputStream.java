@@ -1,4 +1,4 @@
-package com.Abe02.IO;
+package com.Abe02.StreamIO;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -35,7 +35,7 @@ import java.io.IOException;
  *      3.释放资源
  */
 
-public class Demo04InputStream {
+public class Demo04FileInputStream {
     public static void main(String[] args) throws IOException {
         // 1.创建 FileInputStream 对象，构造方法中绑定要读取的数据源
         FileInputStream fis = new FileInputStream("../a.txt");

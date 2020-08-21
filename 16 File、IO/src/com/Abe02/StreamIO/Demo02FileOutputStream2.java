@@ -1,4 +1,4 @@
-package com.Abe02.IO;
+package com.Abe02.StreamIO;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -12,7 +12,7 @@ import java.util.Arrays;
  *      - public void write(byte[] b): 将 b.length 字节从指定的字节数组写入此输出流
  *      - public void write(byte[] b, int off, int len): 从指定的字节数组写入 len 字节，从偏移量 off 开始输出到此输出流
  */
-public class Demo02OutputStream {
+public class Demo02FileOutputStream2 {
     public static void main(String[] args) throws IOException {
         // 1.创建 FileOutputStream 对象，构造方法中传递写入数据的目的地
         FileOutputStream fos = new FileOutputStream(new File("../a.txt"));

@@ -1,8 +1,7 @@
-package com.Abe02.IO2;
+package com.Abe02.StringIO;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 
 /**
  *  字符输入流

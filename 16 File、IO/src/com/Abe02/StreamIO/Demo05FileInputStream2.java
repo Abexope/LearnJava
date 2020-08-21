@@ -1,4 +1,4 @@
-package com.Abe02.IO;
+package com.Abe02.StreamIO;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -23,7 +23,7 @@ import java.util.Arrays;
  *          length：转换的字节个数
  */
 
-public class Demo05InputStream {
+public class Demo05FileInputStream2 {
     public static void main(String[] args) throws IOException {
         // 1.创建 FileInputStream 对象，构造方法中绑定要读取的数据源
         FileInputStream fis = new FileInputStream("../b.txt");

@@ -1,4 +1,4 @@
-package com.Abe02.IO2;
+package com.Abe02.StringIO;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

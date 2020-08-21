@@ -1,4 +1,4 @@
-package com.Abe02.IO;
+package com.Abe02.StreamIO;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -22,7 +22,7 @@ import java.util.Arrays;
  *
  */
 
-public class Demo03OutputStream {
+public class Demo03FileOutputStream3 {
     public static void main(String[] args) throws IOException {
         // 1.创建 FileOutputStream 对象，构造方法中传递写入数据的目的地
         FileOutputStream fos = new FileOutputStream(new File("../a.txt"), true);    // 追加写
