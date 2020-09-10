@@ -130,7 +130,7 @@ public class JdbcDemo8 {
                  */
                 double salary = rs.getDouble("salary");
                 double bonus = rs.getDouble("bonus");
-                rs.getInt("dept_id");
+                int dept_id = rs.getInt("dept_id");
 
                 // 装载数据
                 emp = new Emp();
@@ -141,6 +141,7 @@ public class JdbcDemo8 {
                 emp.setJoin_date(join_date);
                 emp.setSalary(salary);
                 emp.setBonus(bonus);
+                emp.setDept_id(dept_id);
 
                 // 装载集合
                 list.add(emp);
